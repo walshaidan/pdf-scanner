@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="container">
+    <h1>PDF Scanner</h1>
+
+    <p class="subtitle">
+        Upload a PDF and extract its text.
+    </p>
+
+    <div class="upload-box">
+        <input
+                type="file"
+                id="pdfFile"
+                accept="application/pdf"
+        >
+
+        <button id="extractButton">
+            Extract Text
+        </button>
+    </div>
+
+    <p id="status"></p>
+
+    <section id="resultSection" class="hidden">
+        <h2>Extracted Text</h2>
+
+        <textarea
+                id="result"
+                readonly
+        ></textarea>
+
+        <button id="downloadButton">
+            Download .txt
+        </button>
+    </section>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

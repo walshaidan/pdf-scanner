@@ -1,0 +1,22 @@
+PDF Extractor Test #2
+This is a slightly more realistic test for your Python PDF text extractor.
+Section One — Characters and Symbols
+Try extracting: café, résumé, naïve, €49.99, £25, $100, 50%, A&B;, and email@example.com.
+Section Two — Multiple Lines
+A PDF does not necessarily store text in the same order that a person sees it on the page. For a simple
+document like this one, however, your output should be easy to read.
+
+Page Two
+If your program reaches this sentence, it successfully processed more than one page.
+Small Table
+|---------|---------|---------|
+|Item     |Quantity |Price    |
+|---------|---------|---------|
+|Notebook |3        |€12.50   |
+|---------|---------|---------|
+|Pen      |10       |€1.20    |
+|---------|---------|---------|
+|Folder   |2        |€4.75    |
+|---------|---------|---------|
+Final line: Your extractor made it to the end of the document.
+
