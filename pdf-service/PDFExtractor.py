@@ -1,6 +1,7 @@
 import pymupdf
 import TableFormatter
 import TableDetector
+import os
 
 def run_application(pdf,output_path):
     with open(output_path, "w") as file:
@@ -45,7 +46,7 @@ def run_application(pdf,output_path):
 
                 pdf_bytes = pixmap.pdfocr_tobytes(
                     language="eng",
-                    tessdata="/opt/homebrew/share/tessdata"
+                    tessdata = os.getenv("TESSDATA_PATH")
                 )
 
                 ocr_document = pymupdf.open(
